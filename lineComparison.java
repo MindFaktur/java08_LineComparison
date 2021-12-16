@@ -11,7 +11,7 @@ public class lineComparison{
 		int valx2 = obj.nextInt();
 		System.out.println("Enter y2 co-ordinate");
 		int valy2 = obj.nextInt();
-		float lineLength1 = lineLength(valx1,valy1,valx2,valy2);
+		float lineLength1 = lineLength(valx1, valy1, valx2, valy2);
 
 		//Second line
 		System.out.println("Enter x3 co-ordinate");
@@ -22,16 +22,18 @@ public class lineComparison{
 		int valx4 = obj.nextInt();
 		System.out.println("Enter y4 co-ordinate");
 		int valy4 = obj.nextInt();
-		float lineLength2 = lineLength(valx3,valy3,valx4,valy4);
+		float lineLength2 = lineLength(valx3, valy3, valx4, valy4);
 
-		equality(lineLength1,lineLength2);
+		equality(lineLength1, lineLength2);
 	}
 	public static void equality(float line1, float line2){
-		if (line1==line2){
+		if ( line1 == line2 ){
 			System.out.println("Both lines are equal");
+		}else if ( line1 > line2 ){
+			System.out.println("Line1 is greater than line2");
 		}else{
-			System.out.println("Lines are not equal");
-		}
+			System.out.println("Line1 is lesser than line2");
+}
 }
 
 	public static float lineLength(int x1, int y1, int x2, int y2){
